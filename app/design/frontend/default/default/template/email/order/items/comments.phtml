@@ -1,0 +1,43 @@
+<?php
+/**
+ * Diglin
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    Diglin
+ * @package     Diglin_Addinfotoemail
+ * @copyright   Copyright (c) 2011 Diglin (http://www.diglin.com)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+?>
+<?php
+$_order = $this->getOrder();
+$_items = $_order->getAllItems();
+$i = 0;
+$comments = $this->getComments($_items);
+if(count($comments) > 0){
+?>
+<table style="border:1px solid #BEBCB7;background:#f8f7f5;" cellpadding="0" cellspacing="0" width="99.9%" border="0">
+	<tr><td style="padding:3px 9px 6px 9px;background-color:#d9e5ee;line-height:1em;"><strong><?php echo Mage::helper('catalog')->__('Additional Information concerning the product(s) you have bought');?></strong></td></tr>
+<?php 
+foreach($comments as $comment){?>
+	<tr><td style="padding:3px 9px 6px 9px;background-color:<?php echo ($i%2)?'#EEEDED':'#F8F7F5';?>;"><strong><?php echo $comment['title'];?></strong></td></tr>
+	<tr><td style="padding:3px 9px 6px 9px;background-color:<?php echo ($i%2)?'#EEEDED':'#F8F7F5';?>;"><?php echo $comment['comment'];?></td></tr>
+<?php $i++;}?>
+</table>
+<?php 
+}
