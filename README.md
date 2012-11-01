@@ -11,8 +11,16 @@ In this email will appear, in place where you decide to put it, a list of produc
 ## Installation
 
 - You must place in the sales emails template (e.g. app/locale/en_US/templates/email/sales/invoice_new.html) the following text: {{layout area="frontend" handle="sales_email_order_products_comments" order=$order}}
+
+### Via Magento Connect
 - You can install the current stable version via [MagentoConnect](http://www.magentocommerce.com/magento-connect/additional-product-information-into-sales-emails-9872.html)
-- Or you can copy the files from the folders of this repository to the same folders of your installation
+
+### Via modman
+- Install [modman](https://github.com/colinmollenhour/modman)
+- Use the command from your Magento installation folder: `modman clone https://github.com/diglin/Diglin_Addinfotoemail.git`
+
+### Manually
+- You can copy the files from the folders of this repository to the same folders of your installation
 
 ## Documentation
 
