@@ -1,6 +1,6 @@
 app/code/community/Diglin/Addinfotoemail app/code/community/Diglin/Addinfotoemail
-app/design/frontend/default/default/layout/addinfotoemail.xml app/design/frontend/default/default/layout/addinfotoemail.xml
-app/design/frontend/default/default/template/email app/design/frontend/default/default/template/email
+app/design/frontend/base/default/layout/addinfotoemail.xml app/design/frontend/base/default/layout/addinfotoemail.xml
+app/design/frontend/base/default/template/email app/design/frontend/base/default/template/email
 app/etc/modules/Diglin_Addinfotoemail.xml app/etc/modules/Diglin_Addinfotoemail.xml
 app/locale/de_DE/Diglin_Addinfotoemail.csv app/locale/de_DE/Diglin_Addinfotoemail.csv
 app/locale/en_GB/Diglin_Addinfotoemail.csv app/locale/en_GB/Diglin_Addinfotoemail.csv

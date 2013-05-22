@@ -1,0 +1,16 @@
+{
+    "name":"diglin/diglin_addinfotoemail",
+    "type":"magento-module",
+    "license":"OSL-3.0",
+    "homepage":"https://github.com/diglin/Diglin_Addinfotoemail",
+    "description":"Allow you to add additional information about your products into sales email as comments after main inforamation. e.g. User Start Guide, Promotion, Tips, etc",
+    "authors":[
+        {
+            "name":"Sylvain Rayé",
+            "email":"{firstname}.{lastname}@diglin.com"
+        }
+    ],
+    "require":{
+        "magento-hackathon/magento-composer-installer":"*"
+    }
+}
