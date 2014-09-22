@@ -23,7 +23,7 @@
  * @copyright   Copyright (c) 2011 Diglin (http://www.diglin.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-/*@var $installer Diglin_Addinfotoemail_Model_Entity_Setup */
+/* @var $installer Diglin_Addinfotoemail_Model_Entity_Setup */
 $installer = $this;
 
 $installer->startSetup();
